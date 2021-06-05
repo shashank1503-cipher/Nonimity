@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Here | Write Here</title>
+    <!-- Bootstrap CSS -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            background-color:ivory;
+        }
+        nav{
+  float: center;
+  width:100%;
+  padding-top:10px;
+  margin:none;
+  transform:translate(0,-20%);
+}
+nav ul{
+  float:center;
+  margin:none;
+  background-color: #009B77 ;
+}
+nav li {
+  display:inline-block;
+  margin:none;
+  padding:none;
+}
+nav li a,nav li span{
+  box-sizing: border-box;
+  display:inline-block;
+  margin:none;
+  padding:0em 1.5em;
+  text-align:center;
+  font-family:"Roboto",sans-serif;
+  font-weight:600;
+  
+  line-height:60px;
+  text-decoration:none;
+}
+nav li a{
+  color:white;
+}
+nav li:hover a,nav li span{
+  color:#009B77;
+  background:white;
+  border-radius: 3px;
+  text-decoration:none;
+ 
+}
+nav input[type=text] {
+  float: center;
+  padding: 6px;
+  border: none;
+  border-radius: 2px;
+  width: 500px;
+  margin-top: 8px;
+  
+  font-size: 17px;
+  border:#fff solid 1px;
+  text-align: center;
+}
+nav input[type = submit]
+{
+	float: center;
+	width:50px;
+	margin-top: 8px;
+  font-size: 17px;
+  padding:6px;
+  transform: translate(-15%,-1%);
+  background-color: #009B77;
+  color: #fff;
+  border:#fff solid 0.5px;
+  border-radius: 0.1em;
+  border-left: none;
+}
+nav input[type = submit]:hover
+{
+  color:#fff;
+  background:#017459;
+  border:lpx solid #009B77;
+  text-decoration:none;
+}
+        
+        #container{
+            background-color: white;
+            margin:50px;
+            padding: 10px;
+            width: 40rem;
+            box-sizing: border-box;
+            color:black;
+            font-family: 'Roboto',sans-serif;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0  #009B77;
+            float:left;
+            width:45%;
+            
+
+
+        }
+         
+        #container input{
+            padding:none;
+
+            font-family: 'Roboto',sans-serif;
+
+        }
+        #container textarea{
+            border: 1px solid #009B77;
+            border-radius: 10px;
+            font-family: 'Roboto',sans-serif;
+            background:transparent;
+            outline:none;
+            color:#000;
+            font-size:16px;
+            
+        }
+        #container input[type="submit"]{
+            border:none;
+            outline:none;
+            background:#009B77;
+            color:white;
+            height:40px;
+            font-family:'Poppins',sans-serif;
+            font-size:18px;
+            border-radius:20px;
+            
+        }
+        #container input[type= "submit"]:hover{
+            cursor:pointer;
+            background:transparent;
+            color:#009B77;
+            
+        }
+        #container a{
+            
+            text-decoration:none;
+            color:#009B77;
+            font-family: 'Roboto',sans-serif;
+        }
+        #messageBox
+        {
+            box-sizing: border-box;
+            background-color: red;
+            color:white;
+            width: 450px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0;
+            height: auto;
+            margin-top: 50px;
+            font-family: 'Roboto',sans-serif;
+        }
+        #feedsHead
+{
+  
+width: 589px;
+height: 0px;
+left: 383px;
+top: 111px;
+margin-top: 100px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 900;
+font-size: 54px;
+line-height: 0%;
+float:left;
+width: 27%;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+    </style>
+</head>
+
+<body>
+  <div
+  id="logo"
+  style="
+    font-family: poppins;
+    font-size: 40px;
+    color: #009b77;
+    overflow: hidden;
+    
+
+  "
+>
+  <a href = "/main" style="text-decoration: none;
+      color:#009B77;">Nonimity</a>
+</div>
+    <nav>
+			<center>
+			<ul>
+				<li><a href = "main.html"> Back to Feeds </a></li>
+        <form style="display: inline;">
+				<input type="text" name="search" placeholder="Find someone to say something........">
+        <input type="submit" value="Go">
+      </form>
+				<li><a href = "#"> Random Stuff </a></li>
+				<li><a href = "login.html"> Logout </a></li>
+				
+			</ul>
+    </center>
+    </nav>
+    <h2 id = "feedsHead"><p style="
+      width: 42px;
+      height: 0px;
+      left: 341px;
+      top: 130px;
+      display: inline;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 65px;
+      line-height: 0%;
+      
+      /* identical to box height, or 0px */
+      letter-spacing: 0.04em;
+      
+      color: #009B77;
+      
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">| </p>Write </h2>
+    <div id = 'container'>
+        <center><a href = 'main'><h2 style="font-family: Poppins,sans-serif;">
+        Write here
+        </h2></a>
+        <form action = "/main/write" method="POST">
+            <textarea  name="postContent" rows="10" cols = "50" placeholder="Just write what you have in mind, no one's gonna know........but be sure you don't seem to bully or do some kind of online offense.......your post would be subject to scrutiny.">
+            </textarea>
+            <br><br>
+        <input type= "submit" value="Post">
+    </form>    </center>
+    </div>
+
+
+<div id = messageBox> 
+        
+</div>
+
+</body>
+</html>

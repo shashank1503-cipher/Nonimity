@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonimity | Your Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        nav{
+    float: center;
+    width:100%;
+    padding-top:10px;
+    margin:none;
+    transform:translate(0,-20%);
+  }
+  nav ul{
+    float:center;
+    margin:none;
+    background-color: #009B77 ;
+  }
+  nav li {
+    display:inline-block;
+    margin:none;
+    padding:none;
+  }
+  nav li a,nav li span{
+    box-sizing: border-box;
+    display:inline-block;
+    margin:none;
+    padding:0em 1.5em;
+    text-align:center;
+    font-family:"Roboto",sans-serif;
+    font-weight:600;
+    
+    line-height:60px;
+    text-decoration:none;
+  }
+  nav li a{
+    color:white;
+  }
+  nav li:hover a,nav li span{
+    color:#009B77;
+    background:white;
+    border-radius: 3px;
+    text-decoration:none;
+   
+  }
+  nav input[type=text] {
+    float: center;
+    padding: 6px;
+    border: none;
+    border-radius: 2px;
+    width: 500px;
+    margin-top: 8px;
+    
+    font-size: 17px;
+    border:#fff solid 1px;
+    text-align: center;
+  }
+  nav input[type = submit]
+  {
+      float: center;
+      width:50px;
+      margin-top: 8px;
+    font-size: 17px;
+    padding:6px;
+    transform: translate(-15%,-1%);
+    background-color: #009B77;
+    color: #fff;
+    border:#fff solid 0.5px;
+    border-radius: 0.1em;
+    border-left: none;
+  }
+  nav input[type = submit]:hover
+  {
+    color:#fff;
+    background:#017459;
+    border:lpx solid #009B77;
+    text-decoration:none;
+  }
+  #feedsHead
+{
+  
+width: 589px;
+height: 0px;
+left: 383px;
+top: 111px;
+margin-top: 100px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 900;
+font-size: 54px;
+line-height: 0%;
+float:left;
+width: 27%;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#accountDetails
+{  
+
+  width: 35rem;
+  background-color: white;
+  margin-top: 20px;
+  border:darkgray solid 1px;
+  padding: 25px;
+  box-sizing: border-box;
+  color:black;
+  font-family: 'Roboto',sans-serif;   
+  border-radius: 5px;
+  min-height: 175px;
+  margin-left:50px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+#accountDetails img
+{
+  display: inline;
+  border: darkgray solid 1px;
+  border-radius: 50px;
+  margin-left: 25px;
+}
+#accountDetails h2
+{
+  display:inline-block;
+  transform: translate(10%,-125%);
+  font-family: 'Poppins',sans-serif;
+}
+#accountDetails h3
+{
+  text-align: center;
+  transform: translate(0,-100%);
+    
+}
+#accountDetails p
+{
+  transform: translate(31%,-125%);
+}
+#accountDetails button
+{
+  background-color:#009B77 ;
+  color: white;
+  padding: 10px;
+  border: white solid 1px;
+  border-radius: 5px;
+  transform: translate(0,-40%);
+  font-size: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#accountDetails button:hover
+{
+  background-color: white;
+  color: #009B77;
+  cursor: pointer;
+  border: #009B77 solid 1px;
+}
+#accountDetails a
+{
+  text-decoration:none;
+  color:black;
+   
+  padding: 10px;
+  margin-left:0px;
+  
+}
+#accountDetails a:hover
+{
+  text-decoration: none;
+  color:#009b77;
+
+}
+#rightContainer
+{
+  float: left;
+  width: 25rem;
+  background-color: white;
+  margin-top: 50px;
+  border:darkgray solid 1px;
+  padding: 10px;
+  box-sizing: border-box;
+  color:black;
+  font-family: 'Roboto',sans-serif;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  border-radius: 5px;
+  min-height: 175px;
+}
+#rightContainer a
+{
+  text-decoration:none;
+  color:black;
+  font-family: 'Poppins',sans-serif; 
+  padding: 10px;
+  margin-left:0px;
+  font-size: 18px;
+}
+#rightContainer a:hover
+{
+  text-decoration: none;
+  color:#009b77;
+
+}
+.postContainer
+{
+  background-color: white;
+  margin-top: 20px;
+  padding: 10px;
+  width: 35em;
+  box-sizing: border-box;
+  color:black;
+  font-family: 'Roboto',sans-serif;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);;
+  margin-left: 50px;
+  border-radius: 5px;
+  min-height: 175px;
+          
+}
+.postContainer a
+{
+  text-decoration:none;
+  color:#fff;
+  font-family: 'Roboto',sans-serif; 
+  background-color: #009B77; 
+  border-radius: 15px;
+  padding: 10px;
+  margin-right:10px;
+  font-size: 12px;
+}
+.postContainer a:hover
+{
+  text-decoration: none;
+  background-color: seagreen;
+}
+#content
+{
+  float: left; 
+  width: 45%; 
+  margin-top: 30px;
+}
+#content h1
+{
+  margin-left: 50px;
+  font-family: 'Poppins',sans-serif;
+}
+#content h4
+{
+  margin-left: 50px;
+  font-family: 'Roboto',sans-serif;
+  transform: translate(0,-100%);
+}
+
+  </style>
+</head>
+<body>
+    <div
+      id="logo"
+      style="
+        font-family: poppins;
+        font-size: 40px;
+        color: #009b77;
+        overflow: hidden;
+        
+
+      "
+    >
+      <a href = "main.html" style="text-decoration: none;
+          color:#009B77;">Nonimity</a>
+    </div>
+
+    <!--NavBar-->
+    <nav>
+			<center>
+			<ul>
+				<li><a href = "write.html"> Write Something </a></li>
+        <form style="display: inline;">
+				<input type="text" name="search" placeholder="Find someone to say something........">
+        <input type="submit" value="Go">
+      </form>
+				<li><a href = "#"> Random Stuff </a></li>
+				<li><a href = "login.html"> Logout </a></li>
+				
+			</ul>
+    </center>
+    </nav>
+
+    <!--yourFeed-->
+    <h2 id = "feedsHead"><p style="
+      width: 42px;
+      height: 0px;
+      left: 341px;
+      top: 130px;
+      display: inline;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 65px;
+      line-height: 0%;
+      
+      /* identical to box height, or 0px */
+      letter-spacing: 0.04em;
+      
+      color: #009B77;
+      
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">| </p>Your Profile</h2>
+    <div id = "content">
+      <div id = "accountDetails">
+        <img src = "photo.jpg" height="100px" width="100px">
+        <h2>
+          shashan_srivas1234
+        </h2>
+        <p>
+          IIItian<br>
+          ex-LPCian<br>
+          Nothing more than that<br>
+        </p>
+        <h3>Secret Admirers: 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Posts: 23 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href = "#">Comms: 5 </a></h3>
+        <center><button>Be a Secret Admirer </button><button>Write Something Personally</button></center>       
+      </div>
+      <h1>Public Posts</h1>
+      <div class="postContainer">
+                <h5>shashan_srivas1234:</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptates nulla. Voluptatibus quibusdam et corrupti sit doloribus harum! Culpa voluptate maxime quidem amet deserunt, itaque nam necessitatibus maiores laboriosam sed.</p>
+                <a href = '#' >Upvote</a>
+                <a href = '#' >Downvote</a>
+                <a href = "#">Comment</a>
+                
+            </div>
+          <h1>Anonymous Posts</h1>
+          <h4>(Only Visible to you)</h4>
+            <div class="postContainer" >
+                <h5>shashan_srivas1234:</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptates nulla. Voluptatibus quibusdam et corrupti sit doloribus harum! Culpa voluptate maxime quidem amet deserunt, itaque nam necessitatibus maiores laboriosam sed.</p>
+                <a href = '#' >Upvote</a>
+                <a href = '#' >Downvote</a>
+                <a href = "#">Comment</a>
+                <a href = '#' id = "report">Disclose Yourself</a>
+            </div>
+            <div class="postContainer" 
+              >
+                <h5>shashan_srivas1234:</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptates nulla. Voluptatibus quibusdam et corrupti sit doloribus harum! Culpa voluptate maxime quidem amet deserunt, itaque nam necessitatibus maiores laboriosam sed.</p>
+                <a href = '#' >Upvote</a>
+                <a href = '#' >Downvote</a>
+                <a href = "#">Comment</a>
+                <a href = '#' id = "report">Disclose Yourself</a>
+            </div>
+            <div class="postContainer" 
+              >
+                <h5>shashan_srivas1234:</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptates nulla. Voluptatibus quibusdam et corrupti sit doloribus harum! Culpa voluptate maxime quidem amet deserunt, itaque nam necessitatibus maiores laboriosam sed.</p>
+                <a href = '#' >Upvote</a>
+                <a href = '#' >Downvote</a>
+                <a href = "#">Comment</a>
+                <a href = '#' id = "report">Disclose Yourself</a>
+            </div>
+    </div>
+    <div id = "rightContainer">
+      <h2>
+        <a href = "profiler.html">Account Settings</a><br><br>
+        <a href="#" style="font-family: 'Roboto',sans-serif;">Your Messages</a>
+      </h2>
+      
+      </div>
+</body>
+</html>
